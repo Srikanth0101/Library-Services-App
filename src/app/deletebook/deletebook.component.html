@@ -1,0 +1,14 @@
+<div class = " container" align="center">
+  <h2 class="sri"> <u><b>Delete Book Record</b></u> </h2>
+  <br><br>
+<form #deleteform="ngForm" (ngSubmit)="deletedata(deleteform)">
+  <div class="form-group">
+  <label class="s1">  Book ID : </label>
+  <input type="number" #bid (ngModel)="bid" name="bid" id="bid" class="form-class">
+  </div> <br>
+ 
+  <div class="form-group">
+  <input type="submit" value="Delete" class="btn btn-primary w-25">
+  </div>
+</form>
+</div>
